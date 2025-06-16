@@ -1,4 +1,5 @@
 import {preguntas} from "../data/preguntas.js"
+
 export function crearJuego() {
   const juego = document.createElement("section");
   juego.className = "juego";

@@ -1,0 +1,46 @@
+/* Tabla de resultados */
+#tabla-resultados {
+  margin-top: 2rem;
+  font-size: 1.4rem;
+  color: #333;
+}
+
+#tabla-resultados table,
+.historial-partidas table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+}
+
+#tabla-resultados th, #tabla-resultados td,
+.historial-partidas th, .historial-partidas td {
+  border: 1px solid #ddd;
+  padding: 0.6rem;
+  text-align: center;
+}
+
+/* Resumen */
+.resumen-juego {
+  font-weight: bold;
+  margin: 0.8rem 0;
+  color: #444;
+}
+
+/* Historial */
+.historial-partidas {
+  margin-top: 1.5rem;
+}
+
+.historial-partidas h3 {
+  margin-bottom: 0.6rem;
+  font-size: 1.3rem;
+}
+
+
+/* Tabla oculta */
+.tabla-oculta {
+  display: none;
+}
