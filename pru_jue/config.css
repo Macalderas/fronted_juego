@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 12px;
+    font-family: sans-serif;
+}
+
+  body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom right, #f3e9d2, #fff);
+  margin: 0;
+  padding: 0;
+}
+
+
