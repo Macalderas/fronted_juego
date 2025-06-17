@@ -1,5 +1,6 @@
 // contenedor/contenedor.js
-export function crearEncabezado(usuario) {
+
+export function crearEncabezado(usuario = "", nivel = 1, totalPreguntas = 10) {
   const encabezado = document.createElement("section");
   encabezado.className = "encabezado";
 
@@ -13,7 +14,8 @@ export function crearEncabezado(usuario) {
   textoProgreso.textContent = "Preguntas respondidas: ";
 
   const progreso = document.createElement("strong");
-  progreso.textContent = "0/10";
+  progreso.textContent = `0/${totalPreguntas}`;
+  progreso.className = "progreso";
 
   textoProgreso.appendChild(progreso);
   info.appendChild(titulo);
@@ -24,14 +26,14 @@ export function crearEncabezado(usuario) {
 
   const vidas = document.createElement("div");
   vidas.className = "vidas";
-  vidas.textContent = "❤️ ❤️ ❤️ ❤️";
+  vidas.textContent = "❤️ ❤️ ❤️ ❤️ ❤️";
 
-  const nivel = document.createElement("div");
-  nivel.className = "nivel";
-  nivel.textContent = "Nivel 1";
+  const nivelElem = document.createElement("div");
+  nivelElem.className = "nivel";
+  nivelElem.textContent = `Nivel ${nivel}`;
 
   estado.appendChild(vidas);
-  estado.appendChild(nivel);
+  estado.appendChild(nivelElem);
 
   encabezado.appendChild(info);
   encabezado.appendChild(estado);

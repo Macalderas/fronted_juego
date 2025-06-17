@@ -7,10 +7,11 @@ function cargarJuego(usuario) {
   document.getElementById("login-root").style.display = "none";
   const root = document.getElementById("root");
   root.style.display = "block";
+  root.innerHTML = ""; // 👈 Limpia antes de agregar el nuevo contenido
 
-  const encabezadoElem = crearEncabezado(usuario);
-  const juegoElem = crearJuego();
-  const resultadosElem = crearTablaResultados();
+  const encabezadoElem = crearEncabezado(usuario); // ✅ Aquí recibes el nombre
+  const juegoElem = crearJuego(); // ✅ Aquí inicias el juego
+  const resultadosElem = crearTablaResultados(); // ✅ Tabla al final
 
   const main = document.createElement("main");
   main.className = "contenedor";
@@ -24,4 +25,3 @@ function cargarJuego(usuario) {
 document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("login-root").appendChild(crearLogin(cargarJuego));
 });
-
